@@ -8,7 +8,7 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY") 
 
 if api_key:
-    print("🚀 Harika! Çalışma ortamı hazır, kütüphaneler yüklendi ve .env dosyası başarıyla okundu.")
+    print("Çalışma ortamı hazır, kütüphaneler yüklendi ve .env dosyası başarıyla okundu.")
     print(f"Okunan Anahtar: {api_key}")
 else:
-    print("❌ Hata: .env dosyası bulunamadı veya okunamadı.")
+    print("Hata: .env dosyası bulunamadı veya okunamadı.")

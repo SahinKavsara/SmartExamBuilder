@@ -1,0 +1,8 @@
+Ders: İşletim Sistemleri
+Konu: Proses (Süreç) Yönetimi ve Senkronizasyon
+
+Kazanımlar:
+1. Öğrenci, bir prosesin yaşam döngüsündeki durumları (Yeni, Hazır, Çalışıyor, Bekliyor, Sonlandı) açıklar.
+2. Öğrenci, Thread (İş parçacığı) ile Proses arasındaki temel farkları kavrar ve çoklu iş parçacığı (multithreading) mimarisinin avantajlarını listeler.
+3. Öğrenci, Deadlock (Kördüğüm) oluşması için gereken 4 temel şartı (Karşılıklı Dışlama, Tut ve Bekle, Kesintiye Uğratamama, Döngüsel Bekleme) bilir.
+4. Öğrenci, CPU çizelgeleme algoritmalarından FCFS (İlk Gelen İlk Hizmet Alır) ve Round Robin (Zaman Dilimli) yöntemlerinin çalışma mantığını analiz eder.
