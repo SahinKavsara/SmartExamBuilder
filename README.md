@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://via.placeholder.com/150/?text=Add+Logo+Here" width="200" alt="SmartExamBuilder Logo">
+  <img src="logo.png" width="200" alt="SmartExamBuilder Logo">
   
   # 🎓 SmartExamBuilder
 
@@ -16,8 +16,6 @@
 ## 🌟 Proje Hakkında
 
 **SmartExamBuilder**, yerel dil modellerini (Local LLM) kullanarak belirli kazanımlara uygun sorular ve değerlendirme rubrikleri üreten yenilikçi bir yapay zeka aracıdır. Sistem, birbirini denetleyen çoklu ajan (Multi-Agent) mimarisi sayesinde üretilen soruların kalitesini garanti eder ve öğrenci cevaplarını anında değerlendirerek kişiselleştirilmiş geri bildirimler sunar.
-
-> 💡 **Not:** Bu projeye eklemek için harika bir görsel oluşturdum! Proje dizinindeki `smartexambuilder_logo` isimli resmi, üstteki `<img src="...">` alanına ekleyerek bu repoda kapak fotoğrafı yapabilirsiniz.
 
 ---
 
