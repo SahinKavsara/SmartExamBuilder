@@ -32,6 +32,7 @@ from src.agents.evaluator_agent import evaluate_student_answer
 # ───────────────────────────── Sabitler ──────────────────────────────
 
 OUTCOMES = [
+    # ── İşletim Sistemleri ──
     "Öğrenci, bir prosesin yaşam döngüsündeki durumları "
     "(Yeni, Hazır, Çalışıyor, Bekliyor, Sonlandı) açıklar.",
 
@@ -43,6 +44,38 @@ OUTCOMES = [
 
     "Öğrenci, CPU çizelgeleme algoritmalarından FCFS (İlk Gelen İlk Hizmet Alır) "
     "ve Round Robin (Zaman Dilimli) yöntemlerinin çalışma mantığını analiz eder.",
+
+    # ── Matematik ──
+    "Öğrenci, birinci dereceden denklemleri (ax + b = 0) çözer "
+    "ve çözüm adımlarını açıklar.",
+
+    "Öğrenci, fonksiyon kavramını tanımlar, tanım kümesi ve değer kümesini belirler "
+    "ve doğrusal fonksiyonların grafiklerini yorumlar.",
+
+    "Öğrenci, üçgenlerde alan hesaplama yöntemlerini uygular "
+    "(taban × yükseklik / 2 ve Heron formülü).",
+
+    "Öğrenci, temel olasılık kavramını açıklar ve basit olasılık "
+    "problemlerini (zar, yazı-tura) çözer.",
+
+    # ── Tarih ──
+    "Öğrenci, İstanbul'un Fethi'nin (1453) sebeplerini, "
+    "gelişimini ve sonuçlarını açıklar.",
+
+    "Öğrenci, Kurtuluş Savaşı'nın (1919-1923) "
+    "temel aşamalarını ve dönüm noktalarını sıralar.",
+
+    "Öğrenci, Fransız İhtilali'nin (1789) nedenlerini ve "
+    "dünya tarihine etkilerini değerlendirir.",
+
+    "Öğrenci, Sanayi Devrimi'nin toplumsal ve ekonomik "
+    "sonuçlarını analiz eder.",
+
+    "Öğrenci, Osmanlı Devleti'nin kuruluş sürecini (1299) "
+    "ve ilk dönem fetihlerini açıklar.",
+
+    "Öğrenci, İkinci Dünya Savaşı'nın (1939-1945) sebeplerini, "
+    "cephelerini ve sonuçlarını özetler.",
 ]
 
 DIFFICULTY_OPTIONS = {"1": "kolay", "2": "orta", "3": "zor"}
@@ -59,13 +92,20 @@ def header():
     print()
     print(line())
     print("  🎓  SMART EXAM BUILDER  –  LLM + Multi-Agent + RAG")
-    print("       İşletim Sistemleri │ Writer ▸ Critic ▸ Evaluator")
+    print("       İşletim Sistemleri & Matematik & Tarih")
+    print("       Writer ▸ Critic ▸ Evaluator")
     print(line())
 
 
 def select_outcome() -> tuple[int, str]:
+    n = len(OUTCOMES)
     print("\n📚  Hangi kazanım için soru üretilsin?\n")
+    print("  ── İşletim Sistemleri ──")
     for i, o in enumerate(OUTCOMES, 1):
+        if i == 5:
+            print("  ── Matematik ──")
+        if i == 9:
+            print("  ── Tarih ──")
         # Uzun metni kır
         words = o.split()
         line1, line2 = "", ""
@@ -79,12 +119,13 @@ def select_outcome() -> tuple[int, str]:
             print(f"     {line2}")
         print()
 
+    valid = [str(i) for i in range(1, n + 1)]
     while True:
-        ch = input("  Seçim (1-4): ").strip()
-        if ch in ["1", "2", "3", "4"]:
+        ch = input(f"  Seçim (1-{n}): ").strip()
+        if ch in valid:
             idx = int(ch) - 1
             return idx, OUTCOMES[idx]
-        print("  ❌ 1-4 arasında bir sayı girin.\n")
+        print(f"  ❌ 1-{n} arasında bir sayı girin.\n")
 
 
 def select_difficulty() -> str:
@@ -108,23 +149,29 @@ def writer_critic_loop(
     """Writer → Critic döngüsü. Onaylanana kadar en fazla max_attempts kez tekrar."""
     question = None
     for attempt in range(1, max_attempts + 1):
-        print(f"\n  ✍️  Writer Agent çalışıyor... (Deneme {attempt}/{max_attempts})")
-        question = generate_question(outcome, outcome_idx + 1, difficulty)
+        try:
+            print(f"\n  ✍️  Writer Agent çalışıyor... (Deneme {attempt}/{max_attempts})")
+            question = generate_question(outcome, outcome_idx + 1, difficulty)
 
-        print("  🔍 Critic Agent kalite kontrolü yapıyor...")
-        feedback = evaluate_question(question)
+            print("  🔍 Critic Agent kalite kontrolü yapıyor...")
+            feedback = evaluate_question(question)
 
-        stars = "★" * feedback.quality_score + "☆" * (10 - feedback.quality_score)
-        status = "✅ ONAYLANDI" if feedback.is_approved else "❌ REDDEDİLDİ"
-        print(f"     Kalite: {stars} ({feedback.quality_score}/10)  {status}")
+            stars = "★" * feedback.quality_score + "☆" * (10 - feedback.quality_score)
+            status = "✅ ONAYLANDI" if feedback.is_approved else "❌ REDDEDİLDİ"
+            print(f"     Kalite: {stars} ({feedback.quality_score}/10)  {status}")
 
-        if feedback.is_approved:
-            break
+            if feedback.is_approved:
+                break
 
-        if feedback.issues:
-            print("     Sorunlar: " + " | ".join(feedback.issues))
-        if attempt < max_attempts:
-            print("     → Writer yeniden çalışıyor...\n")
+            if feedback.issues:
+                print("     Sorunlar: " + " | ".join(feedback.issues))
+            if attempt < max_attempts:
+                print("     → Writer yeniden çalışıyor...\n")
+        except Exception as e:
+            print(f"\n  ⚠️  Hata oluştu (Deneme {attempt}/{max_attempts}): {e}")
+            if attempt < max_attempts:
+                print("     → Tekrar deneniyor...\n")
+            question = None
 
     return question
 

@@ -100,11 +100,22 @@ def generate_question(
     response = llm.invoke(messages)
     data = _extract_json(response.content)
 
+    # Enum alanlarını güvenli şekilde dönüştür (küçük modeller geçersiz değer üretebilir)
+    try:
+        q_type = QuestionType(data.get("question_type", "acik_uclu"))
+    except ValueError:
+        q_type = QuestionType.OPEN_ENDED
+
+    try:
+        diff_level = DifficultyLevel(data.get("difficulty", difficulty))
+    except ValueError:
+        diff_level = DifficultyLevel(difficulty)
+
     return Question(
         question_text=data["question_text"],
-        question_type=QuestionType(data.get("question_type", "acik_uclu")),
+        question_type=q_type,
         learning_outcome_id=data.get("learning_outcome_id", outcome_id),
-        difficulty=DifficultyLevel(data.get("difficulty", difficulty)),
+        difficulty=diff_level,
         expected_keywords=data.get("expected_keywords", []),
         rubric=RubricCriteria(**data["rubric"]),
     )

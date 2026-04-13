@@ -6,3 +6,47 @@ Kazanımlar:
 2. Öğrenci, Thread (İş parçacığı) ile Proses arasındaki temel farkları kavrar ve çoklu iş parçacığı (multithreading) mimarisinin avantajlarını listeler.
 3. Öğrenci, Deadlock (Kördüğüm) oluşması için gereken 4 temel şartı (Karşılıklı Dışlama, Tut ve Bekle, Kesintiye Uğratamama, Döngüsel Bekleme) bilir.
 4. Öğrenci, CPU çizelgeleme algoritmalarından FCFS (İlk Gelen İlk Hizmet Alır) ve Round Robin (Zaman Dilimli) yöntemlerinin çalışma mantığını analiz eder.
+
+---
+
+Ders: Matematik
+Konu: Temel Matematik Kavramları
+
+Kazanımlar:
+
+5. Birinci dereceden denklemler: ax + b = 0 formundaki denklemlerin çözümü.
+Birinci dereceden denklemlerde amaç, bilinmeyen x değerini bulmaktır. Denklemin her iki tarafına aynı işlem uygulanarak x yalnız bırakılır. Örneğin 2x + 6 = 0 denkleminde her iki taraftan 6 çıkarılır: 2x = -6, sonra her iki taraf 2'ye bölünür: x = -3. Birinci dereceden denklemlerin her zaman tek bir çözümü vardır (a ≠ 0 ise).
+
+6. Fonksiyon kavramı: Bir fonksiyon, bir kümenin her elemanını başka bir kümenin tam olarak bir elemanına eşleyen bir ilişkidir.
+f(x) = 2x + 3 gibi bir fonksiyonda, x'e verilen her değer için tek bir f(x) çıktısı vardır. Fonksiyonun tanım kümesi (domain) giriş değerlerinin kümesidir, değer kümesi (range) ise çıkış değerlerinin kümesidir. Doğrusal fonksiyonlarda grafik bir doğru şeklindedir. Fonksiyonlarda bire-bir (injektif) ve örten (sürjektif) kavramları önemlidir.
+
+7. Üçgenlerde alan hesaplama: Üçgenin alanı = (taban × yükseklik) / 2 formülü ile hesaplanır.
+Bir üçgenin alanını bulmak için tabanlardan birinin uzunluğu ile o tabana ait yükseklik çarpılır ve 2'ye bölünür. Örneğin tabanı 8 cm ve yüksekliği 5 cm olan bir üçgenin alanı = (8 × 5) / 2 = 20 cm²'dir. Eşkenar üçgende yükseklik = (a√3) / 2 formülü ile bulunur. Heron formülü ile üç kenarı bilinen üçgenin alanı da hesaplanabilir: Alan = √(s(s-a)(s-b)(s-c)) burada s = (a+b+c)/2.
+
+8. Olasılık: Bir olayın olasılığı = (İstenen sonuç sayısı) / (Toplam sonuç sayısı) formülü ile hesaplanır.
+Bir zarın atılmasında 6 gelme olasılığı 1/6'dır çünkü toplam 6 sonuç vardır ve istenen sonuç 1 tanedir. İki zarın atılmasında toplam 36 farklı sonuç vardır. Bağımsız olayların birlikte gerçekleşme olasılığı, her bir olayın olasılığının çarpımıdır: P(A ve B) = P(A) × P(B). Tümleyen olay: P(A') = 1 - P(A).
+
+---
+
+Ders: Tarih
+Konu: Türk ve Dünya Tarihi Temel Konuları
+
+Kazanımlar:
+
+9. İstanbul'un Fethi (1453): Fatih Sultan Mehmed, 21 yaşında İstanbul'u fethederek Orta Çağ'ı sona erdirmiştir.
+Fetih 53 gün süren bir kuşatma sonucunda 29 Mayıs 1453'te gerçekleşmiştir. Fatih, gemileri karadan yürüterek Haliç'e indirmiş ve Bizans'ı şaşkına çevirmiştir. Şahi topları surları yıkmada etkili olmuştur. İstanbul'un fethi, Orta Çağ'ın sonu ve Yeni Çağ'ın başlangıcı kabul edilir. Fetihten sonra İstanbul, Osmanlı Devleti'nin başkenti olmuştur.
+
+10. Kurtuluş Savaşı (1919-1923): Mustafa Kemal Atatürk önderliğinde Türk milletinin bağımsızlık mücadelesidir.
+19 Mayıs 1919'da Samsun'a çıkışla başlamıştır. Amasya Genelgesi, Erzurum ve Sivas Kongreleri ile milli mücadele örgütlenmiştir. 23 Nisan 1920'de TBMM açılmıştır. Sakarya Meydan Muharebesi (1921) savunma savaşının dönüm noktasıdır. Büyük Taarruz (26 Ağustos 1922) ile düşman kuvvetleri yenilmiştir. 24 Temmuz 1923'te Lozan Antlaşması imzalanarak bağımsızlık uluslararası alanda tanınmıştır.
+
+11. Fransız İhtilali (1789): Özgürlük, eşitlik ve kardeşlik ilkeleriyle monarşiye karşı yapılan devrimdir.
+14 Temmuz 1789'da Bastille Hapishanesi'nin basılmasıyla başlamıştır. İnsan ve Yurttaş Hakları Bildirisi yayımlanmıştır. Kral XVI. Louis tahttan indirilmiş ve idam edilmiştir. Fransız İhtilali, milliyetçilik akımını başlatarak çok uluslu imparatorlukların dağılmasına yol açmıştır. Demokrasi, laiklik ve insan hakları kavramlarının yayılmasında büyük rol oynamıştır.
+
+12. Sanayi Devrimi (18. yüzyıl): İngiltere'de başlayan ve üretim biçimini kökten değiştiren teknolojik dönüşümdür.
+James Watt'ın buhar makinesini geliştirmesiyle hız kazanmıştır. El emeğinden makine üretimine geçilmiştir. Fabrikalar kurulmuş, köyden kente göç artmıştır. İşçi sınıfı (proletarya) ortaya çıkmıştır. Sömürgecilik hız kazanmış, ham madde ve pazar arayışı artmıştır. Sosyal ve ekonomik yapıda köklü değişiklikler yaşanmıştır.
+
+13. Osmanlı Devleti'nin kuruluşu (1299): Osman Bey tarafından Söğüt'te kurulan beylikten cihan devletine dönüşüm sürecidir.
+Osman Bey, Bizans tekfurlarına karşı başarılar kazanarak beyliğini genişletmiştir. Orhan Bey döneminde Bursa fethedilerek başkent yapılmıştır. I. Murad döneminde Edirne alınmış, yeniçeri ocağı kurulmuştur. Osmanlı, Rumeli'ye geçerek Balkanlarda hızla yayılmıştır. Devşirme sistemi ve tımar sistemi Osmanlı'nın temel yönetim kurumları olmuştur.
+
+14. İkinci Dünya Savaşı (1939-1945): Tarihin en yıkıcı savaşı olup milyonlarca insanın hayatını kaybetmesine yol açmıştır.
+Nazi Almanyası'nın Polonya'yı işgal etmesiyle başlamıştır. Mihver devletleri (Almanya, İtalya, Japonya) ile Müttefik devletler (ABD, İngiltere, SSCB, Fransa) arasında yaşanmıştır. Normandiya Çıkarması (D-Day, 6 Haziran 1944) savaşın dönüm noktalarından biridir. Hiroşima ve Nagazaki'ye atom bombası atılmasıyla Japonya teslim olmuştur. Savaş sonrası BM kurulmuş ve Soğuk Savaş dönemi başlamıştır.
