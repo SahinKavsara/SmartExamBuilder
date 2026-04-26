@@ -36,6 +36,7 @@ CRITIC_SYSTEM = (
     "3. Rubrik somut, ölçülebilir kriterler içeriyor mu?\n"
     "4. Beklenen anahtar kelimeler kazanımla gerçekten ilgili mi?\n"
     "5. Zorluk seviyesi soruya yansımış mı?\n\n"
+    # LLM'in nasıl bir "yapılandırılmış çıktı" (JSON) üretmesi gerektiği burada tanımlanır
     "SADECE aşağıdaki JSON formatında yanıt ver:\n\n"
     '{\n'
     '  "quality_score": 7,\n'
@@ -77,6 +78,7 @@ def evaluate_question(question: Question) -> CriticFeedback:
         "Bu soruyu değerlendir."
     )
 
+    # LLM, üretilen sınav sorusunun kalitesini "eleştirmesi" için çağrılır
     response = llm.invoke([
         SystemMessage(content=CRITIC_SYSTEM),
         HumanMessage(content=human_msg),

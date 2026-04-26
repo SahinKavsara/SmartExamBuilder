@@ -1,0 +1,146 @@
+.evaluation-result {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ─── Score Hero ─────────────────────────────────────────── */
+.score-hero {
+  padding: 40px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.score-emoji {
+  font-size: 3rem;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.score-grade {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.score-hero.excellent .score-grade { color: var(--color-excellent); }
+.score-hero.good .score-grade { color: var(--color-good); }
+.score-hero.satisfactory .score-grade { color: var(--color-satisfactory); }
+.score-hero.insufficient .score-grade { color: var(--color-insufficient); }
+
+.score-number {
+  margin-top: 4px;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.score-max {
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ─── Score Bar ──────────────────────────────────────────── */
+.score-bar-container {
+  width: 100%;
+  max-width: 400px;
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.score-bar-fill {
+  height: 100%;
+  background: var(--bar-color);
+  border-radius: var(--radius-full);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 12px var(--bar-color);
+}
+
+/* ─── Feedback ───────────────────────────────────────────── */
+.feedback-section {
+  padding: 24px;
+}
+
+.feedback-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.feedback-text {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ─── Points Sections ────────────────────────────────────── */
+.points-section {
+  padding: 24px;
+}
+
+.points-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.points-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.point-item {
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  animation: slideInRight 0.4s ease forwards;
+  opacity: 0;
+}
+
+.strong-points .point-item {
+  background: rgba(52, 211, 153, 0.06);
+  border-left: 3px solid var(--color-excellent);
+}
+
+.improvement-areas .point-item {
+  background: rgba(251, 191, 36, 0.06);
+  border-left: 3px solid var(--color-satisfactory);
+}
+
+/* ─── New Exam Button ────────────────────────────────────── */
+.new-exam-btn {
+  margin: 12px auto 40px;
+  padding: 14px 40px;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .score-hero {
+    padding: 32px 20px;
+  }
+  .score-value {
+    font-size: 2.2rem;
+  }
+  .score-emoji {
+    font-size: 2.4rem;
+  }
+}

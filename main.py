@@ -32,50 +32,40 @@ from src.agents.evaluator_agent import evaluate_student_answer
 # ───────────────────────────── Sabitler ──────────────────────────────
 
 OUTCOMES = [
-    # ── İşletim Sistemleri ──
-    "Öğrenci, bir prosesin yaşam döngüsündeki durumları "
-    "(Yeni, Hazır, Çalışıyor, Bekliyor, Sonlandı) açıklar.",
-
-    "Öğrenci, Thread (İş parçacığı) ile Proses arasındaki temel farkları kavrar "
-    "ve çoklu iş parçacığı (multithreading) mimarisinin avantajlarını listeler.",
-
-    "Öğrenci, Deadlock (Kördüğüm) oluşması için gereken 4 temel şartı "
-    "(Karşılıklı Dışlama, Tut ve Bekle, Kesintiye Uğratamama, Döngüsel Bekleme) bilir.",
-
-    "Öğrenci, CPU çizelgeleme algoritmalarından FCFS (İlk Gelen İlk Hizmet Alır) "
-    "ve Round Robin (Zaman Dilimli) yöntemlerinin çalışma mantığını analiz eder.",
-
     # ── Matematik ──
-    "Öğrenci, birinci dereceden denklemleri (ax + b = 0) çözer "
-    "ve çözüm adımlarını açıklar.",
-
-    "Öğrenci, fonksiyon kavramını tanımlar, tanım kümesi ve değer kümesini belirler "
-    "ve doğrusal fonksiyonların grafiklerini yorumlar.",
-
-    "Öğrenci, üçgenlerde alan hesaplama yöntemlerini uygular "
-    "(taban × yükseklik / 2 ve Heron formülü).",
-
-    "Öğrenci, temel olasılık kavramını açıklar ve basit olasılık "
-    "problemlerini (zar, yazı-tura) çözer.",
+    "Günlük hayatta temel dört işlem (toplama, çıkarma, çarpma, bölme) becerilerini kullanır.",
+    "Basit geometrik şekilleri (kare, dikdörtgen, üçgen, daire) tanır ve temel özelliklerini ifade eder.",
+    "Günlük hayatta karşılaşılan kesir kavramlarını (yarım, çeyrek, tam) tanımlar ve kullanır.",
+    "Saat okumayı (tam, buçuk, çeyrek geçe) bilir ve zaman ölçülerini (gün, hafta, ay, yıl) hesaplar.",
+    "Standart uzunluk ölçülerini (metre, santimetre) tanır ve günlük nesnelerin boyunu tahmin eder.",
 
     # ── Tarih ──
-    "Öğrenci, İstanbul'un Fethi'nin (1453) sebeplerini, "
-    "gelişimini ve sonuçlarını açıklar.",
+    "Türkiye Cumhuriyeti'nin kuruluş sürecini ve Atatürk'ün önderliğini temel düzeyde bilir.",
+    "İlk insanların yerleşik hayata geçmesi ve tarımın başlaması gibi en temel tarihi olayları açıklar.",
+    "Türklerin Anadolu'ya girişini temsil eden Malazgirt Meydan Muharebesi'nin (1071) önemini belirtir.",
+    "İnsanlık tarihini değiştiren önemli icatları (yazı, tekerlek, pusula) kimlerin bulduğunu söyler.",
+    "İstanbul'un Fethi'nin dünya tarihi açısından (Orta Çağ'ın bitişi) genel önemini açıklar.",
 
-    "Öğrenci, Kurtuluş Savaşı'nın (1919-1923) "
-    "temel aşamalarını ve dönüm noktalarını sıralar.",
+    # ── Türkçe ──
+    "Büyük harflerin kullanıldığı temel yerleri (özel isimler, cümle başı) hatasız kullanır.",
+    "Okuduğu kısa ve sade bir metnin ana fikrini tek cümleyle ifade eder.",
+    "Günlük hayatta sık kullanılan zıt anlamlı (siyah-beyaz) ve eş anlamlı (yıl-sene) kelimeleri ayırt eder.",
+    "Nokta (.) ve soru işareti (?) gibi en temel noktalama işaretlerinin işlevlerini doğru kullanır.",
+    "Bir olayı oluş sırasına göre mantıklı bir şekilde sıralar.",
 
-    "Öğrenci, Fransız İhtilali'nin (1789) nedenlerini ve "
-    "dünya tarihine etkilerini değerlendirir.",
+    # ── Coğrafya ──
+    "Ana yönleri (Kuzey, Güney, Doğu, Batı) bilir ve çevre yönlendirmelerinde kullanır.",
+    "Dünyadaki kıtaların ve okyanusların isimlerini temel düzeyde söyler.",
+    "Dünyanın şeklinin küreye benzediğini ve gece/gündüzün nasıl oluştuğunu kavrar.",
+    "Mevsimlerin genel özelliklerini, aylara göre sıralanışını ve doğaya etkisini açıklar.",
+    "Çevresinde gördüğü doğal (dağ, orman) ve yapay (bina, köprü) unsurları birbirinden ayırt eder.",
 
-    "Öğrenci, Sanayi Devrimi'nin toplumsal ve ekonomik "
-    "sonuçlarını analiz eder.",
-
-    "Öğrenci, Osmanlı Devleti'nin kuruluş sürecini (1299) "
-    "ve ilk dönem fetihlerini açıklar.",
-
-    "Öğrenci, İkinci Dünya Savaşı'nın (1939-1945) sebeplerini, "
-    "cephelerini ve sonuçlarını özetler.",
+    # ── Genel Kültür ──
+    "Dünyanın ve Türkiye'nin en bilinen coğrafi yapılarını (en yüksek dağ, en uzun nehir vs.) bilir.",
+    "Türkiye'nin genel geçer sembollerini (bayrak, başkent, milli marş) açıklar.",
+    "Güneş sistemindeki gezegenleri temel düzeyde tanır ve Güneş'in bir yıldız olduğunu bilir.",
+    "Sağlıklı bir yaşam için temelde gereken besinleri ve kişisel temizlik kurallarını açıklar.",
+    "Teknolojinin doğru/güvenli kullanımı ile internette kişisel bilgi paylaşmamanın önemini belirtir.",
 ]
 
 DIFFICULTY_OPTIONS = {"1": "kolay", "2": "orta", "3": "zor"}
@@ -92,7 +82,7 @@ def header():
     print()
     print(line())
     print("  🎓  SMART EXAM BUILDER  –  LLM + Multi-Agent + RAG")
-    print("       İşletim Sistemleri & Matematik & Tarih")
+    print("       Matematik & Tarih & Türkçe & Coğrafya & Kültür")
     print("       Writer ▸ Critic ▸ Evaluator")
     print(line())
 
@@ -100,12 +90,16 @@ def header():
 def select_outcome() -> tuple[int, str]:
     n = len(OUTCOMES)
     print("\n📚  Hangi kazanım için soru üretilsin?\n")
-    print("  ── İşletim Sistemleri ──")
+    print("  ── Matematik ──")
     for i, o in enumerate(OUTCOMES, 1):
-        if i == 5:
-            print("  ── Matematik ──")
-        if i == 9:
+        if i == 6:
             print("  ── Tarih ──")
+        elif i == 11:
+            print("  ── Türkçe ──")
+        elif i == 16:
+            print("  ── Coğrafya ──")
+        elif i == 21:
+            print("  ── Genel Kültür ──")
         # Uzun metni kır
         words = o.split()
         line1, line2 = "", ""
@@ -121,6 +115,7 @@ def select_outcome() -> tuple[int, str]:
 
     valid = [str(i) for i in range(1, n + 1)]
     while True:
+        # Kullanıcının seçmek istediği kazanım numarasını (1-14 arası) girdiği kısım
         ch = input(f"  Seçim (1-{n}): ").strip()
         if ch in valid:
             idx = int(ch) - 1
@@ -134,6 +129,7 @@ def select_difficulty() -> str:
     print("  2. ⚖️  Orta")
     print("  3. 🔥 Zor\n")
     while True:
+        # Kullanıcının sorunun zorluk derecesini (1, 2 veya 3) belirlediği kısım
         ch = input("  Seçim (1-3): ").strip()
         if ch in DIFFICULTY_OPTIONS:
             return DIFFICULTY_OPTIONS[ch]
@@ -196,6 +192,7 @@ def get_student_answer() -> str:
     print("  (Bitirmek için boş satırda ENTER'a basın)\n")
     lines = []
     while True:
+        # Öğrencinin açık uçlu soruya verdiği cevabı satır satır girdiği döngü
         row = input("  > ")
         if row == "" and lines:
             break
@@ -277,6 +274,7 @@ def main():
             show_evaluation(result)
 
         # 6. Tekrar?
+        # Uygulamanın en sonunda, kullanıcının yeni bir soruyla devam edip etmeyeceğini seçtiği alan
         print("\n  Yeni soru üretmek ister misiniz? (e/h): ", end="")
         if input().strip().lower() != "e":
             print("\n  👋 İyi çalışmalar!\n")

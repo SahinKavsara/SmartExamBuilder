@@ -1,0 +1,16 @@
+{
+  "name": "smart-exam-builder-backend",
+  "version": "1.0.0",
+  "description": "SmartExamBuilder Express.js API Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.77.0"
+  }
+}

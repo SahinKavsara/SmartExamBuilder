@@ -57,7 +57,6 @@ def _build_system_prompt(outcome_id: int, difficulty: str) -> str:
         "- Zorluk seviyesine uygun bir derinlik kullan"
     )
 
-
 def generate_question(
     learning_outcome: str,
     outcome_id: int,
@@ -81,7 +80,7 @@ def generate_question(
         api_key="lm-studio"
     )
 
-    # RAG'dan ilgili bağlamı çek
+    # RAG (Retrieval-Augmented Generation) mekanizması ile müfredat dosyasından ilgili bilgiler çekilir
     context = retrieve_context(learning_outcome, k=3)
 
     system_msg = _build_system_prompt(outcome_id, difficulty)
@@ -97,6 +96,7 @@ def generate_question(
         HumanMessage(content=human_msg),
     ]
 
+    # LLM (LM Studio) çağrılarak sorunun üretilmesi beklenir
     response = llm.invoke(messages)
     data = _extract_json(response.content)
 

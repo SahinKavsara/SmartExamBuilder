@@ -1,52 +1,107 @@
-Ders: İşletim Sistemleri
-Konu: Proses (Süreç) Yönetimi ve Senkronizasyon
-
-Kazanımlar:
-1. Öğrenci, bir prosesin yaşam döngüsündeki durumları (Yeni, Hazır, Çalışıyor, Bekliyor, Sonlandı) açıklar.
-2. Öğrenci, Thread (İş parçacığı) ile Proses arasındaki temel farkları kavrar ve çoklu iş parçacığı (multithreading) mimarisinin avantajlarını listeler.
-3. Öğrenci, Deadlock (Kördüğüm) oluşması için gereken 4 temel şartı (Karşılıklı Dışlama, Tut ve Bekle, Kesintiye Uğratamama, Döngüsel Bekleme) bilir.
-4. Öğrenci, CPU çizelgeleme algoritmalarından FCFS (İlk Gelen İlk Hizmet Alır) ve Round Robin (Zaman Dilimli) yöntemlerinin çalışma mantığını analiz eder.
-
----
-
 Ders: Matematik
-Konu: Temel Matematik Kavramları
+Konu: Temel Beceri ve Geometri
 
 Kazanımlar:
 
-5. Birinci dereceden denklemler: ax + b = 0 formundaki denklemlerin çözümü.
-Birinci dereceden denklemlerde amaç, bilinmeyen x değerini bulmaktır. Denklemin her iki tarafına aynı işlem uygulanarak x yalnız bırakılır. Örneğin 2x + 6 = 0 denkleminde her iki taraftan 6 çıkarılır: 2x = -6, sonra her iki taraf 2'ye bölünür: x = -3. Birinci dereceden denklemlerin her zaman tek bir çözümü vardır (a ≠ 0 ise).
+1. Günlük hayatta temel dört işlem (toplama, çıkarma, çarpma, bölme) becerilerini kullanır.
+Temel dört işlem (toplama, çıkarma, çarpma, bölme) en gerekli becerilerimizdendir. Toplama, öğeleri bir araya getirirken; çıkarma geri kalanları hesaplamayı sağlar. Çarpma, tekrarlı toplamanın kısayoludur; bölme ise nesneleri eşit şekilde paylaştırmamızı sağlar. Bakkal hesabından saat hesaplamaya kadar her yerde kullanılırlar.
 
-6. Fonksiyon kavramı: Bir fonksiyon, bir kümenin her elemanını başka bir kümenin tam olarak bir elemanına eşleyen bir ilişkidir.
-f(x) = 2x + 3 gibi bir fonksiyonda, x'e verilen her değer için tek bir f(x) çıktısı vardır. Fonksiyonun tanım kümesi (domain) giriş değerlerinin kümesidir, değer kümesi (range) ise çıkış değerlerinin kümesidir. Doğrusal fonksiyonlarda grafik bir doğru şeklindedir. Fonksiyonlarda bire-bir (injektif) ve örten (sürjektif) kavramları önemlidir.
+2. Basit geometrik şekilleri (kare, dikdörtgen, üçgen, daire) tanır ve temel özelliklerini ifade eder.
+Kare, dört kenarı da birbirine eşit ve dört açısı dik (90 derece) olan bir şekildir. Dikdörtgenin karşılıklı kenarları eşittir. Üçgenin üç köşe ve üç kenarı bulunur. Daire ise merkezi olan ve köşesi olmayan tamamen yuvarlak bir şekildir. İnsanlar bu şekilleri kullanarak eşyalar (kutu, tekerlek, çatı) üretirler.
 
-7. Üçgenlerde alan hesaplama: Üçgenin alanı = (taban × yükseklik) / 2 formülü ile hesaplanır.
-Bir üçgenin alanını bulmak için tabanlardan birinin uzunluğu ile o tabana ait yükseklik çarpılır ve 2'ye bölünür. Örneğin tabanı 8 cm ve yüksekliği 5 cm olan bir üçgenin alanı = (8 × 5) / 2 = 20 cm²'dir. Eşkenar üçgende yükseklik = (a√3) / 2 formülü ile bulunur. Heron formülü ile üç kenarı bilinen üçgenin alanı da hesaplanabilir: Alan = √(s(s-a)(s-b)(s-c)) burada s = (a+b+c)/2.
+3. Günlük hayatta karşılaşılan kesir kavramlarını (yarım, çeyrek, tam) tanımlar ve kullanır.
+Kesirler bir bütünün eş parçalara bölünmesini ifade eder. Eğer bir ekmeği iki eşit parçaya bölersek her bir parça "yarım" olur. Dört eşit parçaya bölersek her bir parça "çeyrek" olur. Parçalanmamış, eksiksiz olan şeye ise "tam" denir.
 
-8. Olasılık: Bir olayın olasılığı = (İstenen sonuç sayısı) / (Toplam sonuç sayısı) formülü ile hesaplanır.
-Bir zarın atılmasında 6 gelme olasılığı 1/6'dır çünkü toplam 6 sonuç vardır ve istenen sonuç 1 tanedir. İki zarın atılmasında toplam 36 farklı sonuç vardır. Bağımsız olayların birlikte gerçekleşme olasılığı, her bir olayın olasılığının çarpımıdır: P(A ve B) = P(A) × P(B). Tümleyen olay: P(A') = 1 - P(A).
+4. Saat okumayı (tam, buçuk, çeyrek geçe) bilir ve zaman ölçülerini (gün, hafta, ay, yıl) hesaplar.
+Saatlerde yelkovan 12'nin üzerindeyse saat tamdır; 6'nın üzerindeyse buçuk (yarım saat), 3'ün üzerindeyse çeyrek geçiyor demektir. Bir gün 24 saat, bir hafta 7 gün, bir ay 30 gün ve bir yıl 365 gündür. Zamanı doğru okumak günlük planlarımızı yapmamız için çok önemlidir.
+
+5. Standart uzunluk ölçülerini (metre, santimetre) tanır ve günlük nesnelerin boyunu tahmin eder.
+Uzunluk ölçülerinin temel birimi metredir (m). Kısa mesafeleri veya küçük nesneleri, metrenin yüzden biri olan santimetre (cm) ile ölçeriz. Örneğin boyumuz veya masanın uzunluğu metre ve santimetre cinsinden fade edilirken; silgi, kalem gibi gereçler santimetre üzerinden hesaplanır.
 
 ---
 
 Ders: Tarih
-Konu: Türk ve Dünya Tarihi Temel Konuları
+Konu: Temel Türk ve İnsanlık Tarihi
 
 Kazanımlar:
 
-9. İstanbul'un Fethi (1453): Fatih Sultan Mehmed, 21 yaşında İstanbul'u fethederek Orta Çağ'ı sona erdirmiştir.
-Fetih 53 gün süren bir kuşatma sonucunda 29 Mayıs 1453'te gerçekleşmiştir. Fatih, gemileri karadan yürüterek Haliç'e indirmiş ve Bizans'ı şaşkına çevirmiştir. Şahi topları surları yıkmada etkili olmuştur. İstanbul'un fethi, Orta Çağ'ın sonu ve Yeni Çağ'ın başlangıcı kabul edilir. Fetihten sonra İstanbul, Osmanlı Devleti'nin başkenti olmuştur.
+6. Türkiye Cumhuriyeti'nin kuruluş sürecini ve Atatürk'ün önderliğini temel düzeyde bilir.
+Türkiye Cumhuriyeti, Birinci Dünya Savaşı sonrasında işgale uğrayan Anadolu'nun kurtarılmasıyla kurulmuştur (1919-1923). Mustafa Kemal Atatürk önderliğinde yapılan Kurtuluş Savaşı zaferle sonuçlanmış ve ardından saltanat yerine 29 Ekim 1923'te Cumhuriyet ilan edilerek ülke yönetiminde halk egemenliği sağlanmıştır.
 
-10. Kurtuluş Savaşı (1919-1923): Mustafa Kemal Atatürk önderliğinde Türk milletinin bağımsızlık mücadelesidir.
-19 Mayıs 1919'da Samsun'a çıkışla başlamıştır. Amasya Genelgesi, Erzurum ve Sivas Kongreleri ile milli mücadele örgütlenmiştir. 23 Nisan 1920'de TBMM açılmıştır. Sakarya Meydan Muharebesi (1921) savunma savaşının dönüm noktasıdır. Büyük Taarruz (26 Ağustos 1922) ile düşman kuvvetleri yenilmiştir. 24 Temmuz 1923'te Lozan Antlaşması imzalanarak bağımsızlık uluslararası alanda tanınmıştır.
+7. İlk insanların yerleşik hayata geçmesi ve tarımın başlaması gibi en temel tarihi olayları açıklar.
+Eski çağlarda ilk insanlar avcı ve toplayıcıydı; sürekli göç ederlerdi. Zamanla tohumları ekip biçmeyi yani tarım yapmayı keşfettiklerinde bir yerde sürekli kalmaya, evler yapmaya ve köyler kurmaya başladılar. Bu olaya "yerleşik hayata geçiş" diyoruz. Böylece medeniyetlerin temeli atılmıştır.
 
-11. Fransız İhtilali (1789): Özgürlük, eşitlik ve kardeşlik ilkeleriyle monarşiye karşı yapılan devrimdir.
-14 Temmuz 1789'da Bastille Hapishanesi'nin basılmasıyla başlamıştır. İnsan ve Yurttaş Hakları Bildirisi yayımlanmıştır. Kral XVI. Louis tahttan indirilmiş ve idam edilmiştir. Fransız İhtilali, milliyetçilik akımını başlatarak çok uluslu imparatorlukların dağılmasına yol açmıştır. Demokrasi, laiklik ve insan hakları kavramlarının yayılmasında büyük rol oynamıştır.
+8. Türklerin Anadolu'ya girişini temsil eden Malazgirt Meydan Muharebesi'nin (1071) önemini belirtir.
+1071 yılında Büyük Selçuklu Devleti ile Bizans İmparatorluğu arasında gerçekleşen Malazgirt Meydan Muharebesi, Türk ve dünya tarihi için çok önemlidir. Sultan Alparslan'ın kazandığı bu büyük zaferle birlikte "Anadolu'nun kapıları Türklere açıldı" ve Türkler kalıcı olarak yerleşmeye başladılar.
 
-12. Sanayi Devrimi (18. yüzyıl): İngiltere'de başlayan ve üretim biçimini kökten değiştiren teknolojik dönüşümdür.
-James Watt'ın buhar makinesini geliştirmesiyle hız kazanmıştır. El emeğinden makine üretimine geçilmiştir. Fabrikalar kurulmuş, köyden kente göç artmıştır. İşçi sınıfı (proletarya) ortaya çıkmıştır. Sömürgecilik hız kazanmış, ham madde ve pazar arayışı artmıştır. Sosyal ve ekonomik yapıda köklü değişiklikler yaşanmıştır.
+9. İnsanlık tarihini değiştiren önemli icatları (yazı, tekerlek, pusula) kimlerin bulduğunu söyler.
+Tarihte bazı icatlar insan medeniyetini tamamen değiştirmiştir. M.Ö. 3200'lerde Sümerler "çivi yazısı"nı icat ederek tarihi çağları başlatmıştır. Tekerlek de ulaşımı hızlandırmıştır. Çinlilerin bulduğu pusula (yön bulma) ve kağıt matbaa ile bilimin yayılması çok kolaylaşmıştır.
 
-13. Osmanlı Devleti'nin kuruluşu (1299): Osman Bey tarafından Söğüt'te kurulan beylikten cihan devletine dönüşüm sürecidir.
-Osman Bey, Bizans tekfurlarına karşı başarılar kazanarak beyliğini genişletmiştir. Orhan Bey döneminde Bursa fethedilerek başkent yapılmıştır. I. Murad döneminde Edirne alınmış, yeniçeri ocağı kurulmuştur. Osmanlı, Rumeli'ye geçerek Balkanlarda hızla yayılmıştır. Devşirme sistemi ve tımar sistemi Osmanlı'nın temel yönetim kurumları olmuştur.
+10. İstanbul'un Fethi'nin dünya tarihi açısından (Orta Çağ'ın bitişi) genel önemini açıklar.
+Fatih Sultan Mehmet, 1453 yılında o dönemki adıyla Konstantinopolis'i fethederek Doğu Roma (Bizans) İmparatorluğu'nu yıkmıştır. Bu olay Orta Çağ'ın kapanıp Yeni Çağ'ın başlaması olarak kabul edilir. Büyük surların dev toplarla (şahi topları) yıkılabileceği öğrenilmiş ve bu Avrupalıların kendi ülkelerindeki kuralları değiştirmesini sağlamıştır.
 
-14. İkinci Dünya Savaşı (1939-1945): Tarihin en yıkıcı savaşı olup milyonlarca insanın hayatını kaybetmesine yol açmıştır.
-Nazi Almanyası'nın Polonya'yı işgal etmesiyle başlamıştır. Mihver devletleri (Almanya, İtalya, Japonya) ile Müttefik devletler (ABD, İngiltere, SSCB, Fransa) arasında yaşanmıştır. Normandiya Çıkarması (D-Day, 6 Haziran 1944) savaşın dönüm noktalarından biridir. Hiroşima ve Nagazaki'ye atom bombası atılmasıyla Japonya teslim olmuştur. Savaş sonrası BM kurulmuş ve Soğuk Savaş dönemi başlamıştır.
+---
+
+Ders: Türkçe
+Konu: Dil Bilgisi ve Okuduğunu Anlama
+
+Kazanımlar:
+
+11. Büyük harflerin kullanıldığı temel yerleri (özel isimler, cümle başı) hatasız kullanır.
+Türkçede herhangi bir cümleye başlarken her zaman ilk harf büyük yazılır. Ayrıca insan isimleri, şehir, ülke veya kurum adları gibi sadece tek bir varlığı karşılayan "özel isimler" de mutlaka büyük harfle başlar. Bunlar dışında anlam özel olmadığı sürece kelimeler küçük harfle yazılır.
+
+12. Okuduğu kısa ve sade bir metnin ana fikrini tek cümleyle ifade eder.
+Bir yazarın okuyucuya en çok vermek istediği asıl mesaja "ana fikir" (ana düşünce) denir. Ana fikir genellikle genel bir ders, bir öğüt veya kısa bir hayat kuralıdır. Bir metni okuduktan sonra "Bu metin bana ne öğretmek istedi?" sorusunun cevabı bizi ana fikre ulaştırır.
+
+13. Günlük hayatta sık kullanılan zıt anlamlı (siyah-beyaz) ve eş anlamlı (yıl-sene) kelimeleri ayırt eder.
+Anlamları birbirinin tam tersi veya karşıtı olan kelimelere zıt anlamlı kelimeler denir; sıcak-soğuk, uzun-kısa gibi. Yazılışları farklı ancak anlamları aynı olan kelimelere ise eş anlamlı kelimeler denir; öğrenci-talebe, doktor-hekim, yıl-sene gibi. Eş ve zıt anlam kelime daracağımızı büyütür.
+
+14. Nokta (.) ve soru işareti (?) gibi en temel noktalama işaretlerinin işlevlerini doğru kullanır.
+Cümlelerin sonuna konulan Nokta (.) yargının, ifadenin bittiğini belirtir. İçerisinde cevap beklenen, "Neden, kim, nasıl?" gibi ifadeler geçen cümlelerin sonuna ise Soru İşareti (?) gelir. Eğer cümlenin sonunda ani bir tepki (şaşkınlık, korku) varsa Ünlem (!) kullanılır.
+
+15. Bir olayı oluş sırasına göre mantıklı bir şekilde sıralar.
+Paragrafları veya yaşadığımız olayları etkili anlatmak için oluş sırasına koymak zorundayız. Cümleleri kronolojik (zaman akışına uygun) olarak dizebilmek için "önce", "sonra", "daha sonra" ve "en sonunda" gibi sıralama ve bağlaç kelimelerini kullanmamız cümlelerin mantığını kuvvetlendirir.
+
+---
+
+Ders: Coğrafya
+Konu: Yönler ve Yeryüzü
+
+Kazanımlar:
+
+16. Ana yönleri (Kuzey, Güney, Doğu, Batı) bilir ve çevre yönlendirmelerinde kullanır.
+Güneşin doğduğu yöne Doğu, battığı yöne Batı denir. Sağ kolumuzu doğuya doğru uzatırsak; sol tarafımız batı, önümüz Kuzey, arkamız ise Güney olur. Yönler haritaların daha rahat okunması ve orman gibi zor alanlarda kaybolmamak için insanların vazgeçilmez pusula kılavuzudur.
+
+17. Dünyadaki kıtaların ve okyanusların isimlerini temel düzeyde söyler.
+Dünyanın büyük kara parçalarına Afrika, Asya, Avrupa, Kuzey Amerika, Güney Amerika, Antarktika, Avustralya (Okyanusya) adı verilir ve bunlara 'Kıta' denir. Kıtaların arasında devasa sular olan büyük 'Okyanuslar' (Büyük Okyanus, Atlas Okyanusu, Hint Okyanusu) bulunur. Dünyanın neredeyse üçte ikisi okyanustur.
+
+18. Dünyanın şeklinin küreye benzediğini ve gece/gündüzün nasıl oluştuğunu kavrar.
+Üzerinde yaşadığımız Dünya uzaydan bakıldığında hafif basık bir küre gibidir. Dünya kendi etrafında topaç gibi döndüğü için, Güneş ışığı alan tarafı Gündüz, karanlıkta kalan tarafı Gece olur. Kendi etrafındaki bu tam dönüş 24 saat, yani "bir gün" sürer.
+
+19. Mevsimlerin genel özelliklerini, aylara göre sıralanışını ve doğaya etkisini açıklar.
+Bir yılda 4 mevsim bulunur: İlkbahar, Yaz, Sonbahar, Kış. Dünyanın Güneş etrafında dolanmasıyla oluşur. Yazın (Haziran, Temmuz, Ağustos) havalar sıcaktır; Kışın (Aralık, Ocak, Şubat) soğuktur ve kar yağabilir. Mevsimler insanların giyim tarzını, ekinlerin hasat edilmesini ve yediğimiz meyveleri doğrudan belirler.
+
+20. Çevresinde gördüğü doğal (dağ, orman) ve yapay (bina, köprü) unsurları birbirinden ayırt eder.
+İnsan eli değmeden doğada kendiliğinden var olan akarsular, ormanlar, bitkiler, göller doğal çevre unsurlarıdır. Doğal olanın üzerine insanların ihtiyaçları için inşa ettiği binalar, yollar, köprüler ve parklar ise yapay çevre unsurudur. Gelişim için her ikisinin dengesi şarttır.
+
+---
+
+Ders: Genel Kültür
+Konu: Genel Dünya ve Türkiye Temaları
+
+Kazanımlar:
+
+21. Dünyanın ve Türkiye'nin en bilinen coğrafi yapılarını (en yüksek dağ, en uzun nehir vs.) bilir.
+Dünyanın en yüksek dağı Asya'daki Everest Dağı'dır. Dünyanın en uzun nehirleri arasında olan Nil Nehri, Afrika kıtasındadır. Türkiye'nin en yüksek dağı Ağrı Dağı, en büyük gölü Van Gölü'dür. İstanbul Boğazı, Asya ve Avrupa'yı birbirine bağlayan Türkiye'deki en turistik ve stratejik noktadır.
+
+22. Türkiye'nin genel geçer sembollerini (bayrak, başkent, milli marş) açıklar.
+Türkiye Cumhuriyeti'nin başkenti Ankara'dır ve devleti oradan yönetilir. Bağımsızlığın en büyük sembolü, kırmızı zemin üzerine beyaz hilal ve yıldızdan oluşan Türk Bayrağı'dır. İstiklal Marşı Mehmet Akif Ersoy tarafından yazılmıştır ve Türk milletinin kahramanlığını temsil eden milli marşıdır.
+
+23. Güneş sistemindeki gezegenleri temel düzeyde tanır ve Güneş'in bir yıldız olduğunu bilir.
+Dünya, merkezinde kocaman ateş saçan bir yıldız olan "Güneş"in etrafında dolanan gezegenlerden sadece biridir. Güneş sisteminde Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs ve Neptün adı verilen toplam 8 gezegen bulunur. Güneş, bu sisteme ışık ve ısı vererek Dünyadaki yaşamı destekler.
+
+24. Sağlıklı bir yaşam için temelde gereken besinleri ve kişisel temizlik kurallarını açıklar.
+Sağlıklı kalabilmek için vücuda faydalı meyveler, sebzeler ve yiyecekler tüketilmeli, aşırı şekerden kaçınılmalıdır. Buna dengeli beslenme denir. Buna ek olarak diş fırçalamak, el yıkamak ve banyo yapmak gibi kişisel temizlik kuralları hastalıklara ve bakterilere karşı korunmamızı sağlayan en önemli kalkanımızdır.
+
+25. Teknolojinin doğru/güvenli kullanımı ile internette kişisel bilgi paylaşmamanın önemini belirtir.
+İnternet bilgiye ulaşmak için harika bir araçtır ancak tehlikeleri de vardır. İsim, adres, telefon numarası veya parola gibi "kişisel bilgilerimiz" internet ortamında kesinlikle tanınmayan yabancılarla paylaşılmamalıdır. Ekran karşısında gereğinden fazla zaman geçirmek dikkat eksikliğine veya göz hastalıklarına yol açabilir.

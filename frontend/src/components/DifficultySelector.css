@@ -1,0 +1,96 @@
+.difficulty-selector {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+}
+
+.selected-outcome-preview {
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+.preview-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-purple);
+  margin-bottom: 6px;
+}
+
+.preview-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ─── Difficulty Cards ───────────────────────────────────── */
+.difficulty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.difficulty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-primary);
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+.difficulty-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+}
+
+.diff-icon {
+  font-size: 2.4rem;
+  filter: drop-shadow(0 0 12px var(--diff-color));
+  transition: transform var(--transition-base);
+}
+
+.difficulty-card:hover .diff-icon {
+  transform: scale(1.15);
+}
+
+.diff-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.diff-description {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 580px) {
+  .difficulty-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .difficulty-card {
+    padding: 24px 20px;
+    flex-direction: row;
+    text-align: left;
+    gap: 16px;
+  }
+  .diff-icon {
+    font-size: 1.8rem;
+  }
+}

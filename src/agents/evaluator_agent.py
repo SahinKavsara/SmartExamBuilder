@@ -44,6 +44,7 @@ EVALUATOR_SYSTEM = (
     '  "strong_points": ["güçlü yön 1", "güçlü yön 2"],\n'
     '  "improvement_areas": ["geliştirilecek alan 1"]\n'
     "}\n\n"
+    # Değerlendirme kriterlerinin (skorlama aralıkları) LLM'e belirtildiği kısım
     "Puan-Kademe eşleşmesi: 90-100→Mükemmel | 70-89→İyi | 50-69→Yeterli | 0-49→Yetersiz"
 )
 
@@ -78,6 +79,7 @@ def evaluate_student_answer(question: Question, student_answer: str) -> Evaluati
         "Bu cevabı değerlendir ve JSON formatında döndür."
     )
 
+    # LLM, öğrencinin cevabını rubriğe göre puanlaması ve geri bildirim vermesi için çağrılır
     response = llm.invoke([
         SystemMessage(content=EVALUATOR_SYSTEM),
         HumanMessage(content=human_msg),

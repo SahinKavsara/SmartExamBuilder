@@ -1,0 +1,77 @@
+/* ═══════════════════════════════════════════════════════════
+   SmartExamBuilder – App-level Styles
+   ═══════════════════════════════════════════════════════════ */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+/* ─── Error Banner ───────────────────────────────────────── */
+.error-banner {
+  margin: 16px auto;
+  max-width: 860px;
+  padding: 0 24px;
+  animation: fadeInUp 0.3s ease;
+}
+
+.error-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: rgba(248, 113, 113, 0.08);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.error-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.error-content strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-insufficient);
+  margin-bottom: 4px;
+}
+
+.error-content p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.error-content code {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  font-family: "Fira Code", monospace;
+  font-size: 0.78rem;
+  color: var(--accent-blue);
+}
+
+.error-dismiss {
+  margin-left: auto;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color var(--transition-fast);
+}
+
+.error-dismiss:hover {
+  color: var(--text-primary);
+}
